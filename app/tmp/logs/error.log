@@ -1,0 +1,60 @@
+2017-03-20 14:33:35 Error: [Error] Class 'Cake\Mailer\Email' not found
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 [internal function]: UsersController->mail()
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-20 14:33:51 Error: [Error] Class 'Email' not found
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 [internal function]: UsersController->mail()
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-20 14:35:01 Error: [Error] Class 'Cake\Network\Email' not found
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 [internal function]: UsersController->mail()
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-20 14:36:24 Error: [ConfigureException] C:\mysite\htdocs\monprojet\app\Config\email.php not found.
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 C:\mysite\htdocs\monprojet\lib\Cake\Network\Email\CakeEmail.php(1148): CakeEmail->_applyConfig('default')
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Network\Email\CakeEmail.php(362): CakeEmail->config('default')
+#2 C:\mysite\htdocs\monprojet\app\Controller\UsersController.php(21): CakeEmail->__construct('default')
+#3 [internal function]: UsersController->mail()
+#4 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-03-20 14:37:01 Error: [Error] Call to undefined method CakeEmail::setFrom()
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 [internal function]: UsersController->mail()
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-20 14:37:36 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /monprojet/users/mail
+Stack Trace:
+#0 C:\mysite\htdocs\monprojet\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('touil_anouar@ou...', 'About', 'My message\r\n\r\n', 'From: Touil Ano...', NULL)
+#1 C:\mysite\htdocs\monprojet\lib\Cake\Network\Email\CakeEmail.php(1173): MailTransport->send(Object(CakeEmail))
+#2 C:\mysite\htdocs\monprojet\app\Controller\UsersController.php(25): CakeEmail->send('My message')
+#3 [internal function]: UsersController->mail()
+#4 C:\mysite\htdocs\monprojet\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\mysite\htdocs\monprojet\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\mysite\htdocs\monprojet\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
